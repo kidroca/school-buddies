@@ -2,9 +2,12 @@
 
     var app = angular.module('app', ['ngRoute']);
 
-    app.config(['$logProvider', '$routeProvider', function ($logProvider, $routeProvider) {
+    app.config(['$logProvider', '$routeProvider', '$locationProvider',
+                function ($logProvider, $routeProvider, $locationProvider) {
 
         $logProvider.debugEnabled(true);
+
+        $locationProvider.html5Mode(true);
 
         $routeProvider
             .when('/', {
