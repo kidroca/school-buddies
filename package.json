@@ -4,7 +4,7 @@
   "description": "Angular Routing In-Depth Demo App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/karma/bin/karma start karma.conf.js"
   },
   "author": "Brice Wilson",
   "license": "ISC",
@@ -15,5 +15,12 @@
     "jade": "^1.9.2",
     "morgan": "^1.5.2",
     "serve-favicon": "^2.2.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1"
   }
 }
