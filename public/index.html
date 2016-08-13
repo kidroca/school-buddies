@@ -24,23 +24,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#/schools">Schools<span class="sr-only">(current)</span></a></li>
-                <li><a href="#/classrooms">Classrooms</a></li>
-                <li><a href="#/activities">Activities</a></li>
+                <li><a ui-sref="schools">Schools<span class="sr-only">(current)</span></a></li>
+                <li><a ui-sref="classrooms">Classrooms</a></li>
+                <li><a ui-sref="activities">Activities</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
-
+<div ui-view></div>
 
 <!-- Libraries -->
 <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="app/bower_components/toastr/toastr.min.js"></script>
 
 <!-- Angular -->
-<script src="app/bower_components/angular/angular.min.js"></script>
-<script src="app/bower_components/angular-route/angular-route.min.js"></script>
+<script src="app/bower_components/angular/angular.js"></script>
+<script src="app/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
 <!-- Application code -->
 <script src="app/app.js"></script>
