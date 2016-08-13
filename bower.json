@@ -1,0 +1,16 @@
+{
+  "name": "School Buddies",
+  "description": "Angular demo application",
+  "main": "index.js",
+  "authors": [
+    "Peter Velkov"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kidroca/school-buddies",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "toastr": "^2.1.3"
+  }
+}
