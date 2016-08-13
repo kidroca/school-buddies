@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('app')
+    angular.module('app.controllers')
         .controller('AllActivitiesController',
             ['$log', '$state', 'dataService', 'notifier', 'activities', AllActivitiesController]);
 

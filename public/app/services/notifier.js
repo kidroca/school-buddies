@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('app')
+    angular.module('app.services')
         .factory('notifier', notifier);
 
     function notifier() {

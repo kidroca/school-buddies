@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('app')
+    angular.module('app.services')
         .factory('dataService', ['$http', '$q', '$log', '$timeout', dataService]);
 
     function dataService($http, $q, $log, $timeout) {

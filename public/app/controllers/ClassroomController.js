@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('app')
+    angular.module('app.controllers')
         .controller('ClassroomController',
             ['$stateParams', 'dataService', 'notifier', ClassroomController]);
 

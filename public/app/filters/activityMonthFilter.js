@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('app')
+    angular.module('app.filters')
         .filter('activityMonthFilter', function() {
             return function(activities, filterMonth) {
 

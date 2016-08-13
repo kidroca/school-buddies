@@ -1,6 +1,11 @@
 (function() {
 
-    var app = angular.module('app', ['ui.router']);
+    angular.module('app.services', []);
+    angular.module('app.controllers', []);
+    angular.module('app.filters', []);
+
+    var app = angular.module('app',
+        ['ui.router', 'app.services', 'app.controllers', 'app.filters']);
 
     app.config(['$logProvider', '$stateProvider', '$urlRouterProvider',
                 function ($logProvider, $stateProvider, $urlRouterProvider) {
