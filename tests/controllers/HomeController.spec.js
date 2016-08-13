@@ -152,7 +152,7 @@ describe('Home Controller', function () {
             $rootScope.$apply();
 
             expect(notifier.error.calls.count()).toEqual(1);
-            expect(notifier.error.calls.first().args[0]).toEqual(msg);
+            expect(notifier.error).toHaveBeenCalledWith(msg);
         });
 
         it('getAllClassrooms() should show error', function() {
@@ -173,7 +173,7 @@ describe('Home Controller', function () {
             $rootScope.$apply();
 
             expect(notifier.error.calls.count()).toEqual(1);
-            expect(notifier.error.calls.first().args[0]).toEqual(msg);
+            expect(notifier.error).toHaveBeenCalledWith(msg);
         });
 
         it('getAllActivities() should show error', function() {
@@ -194,7 +194,7 @@ describe('Home Controller', function () {
             $rootScope.$apply();
 
             expect(notifier.error.calls.count()).toEqual(1);
-            expect(notifier.error.calls.first().args[0]).toEqual(msg);
+            expect(notifier.error).toHaveBeenCalledWith(msg);
         });
     });
 
